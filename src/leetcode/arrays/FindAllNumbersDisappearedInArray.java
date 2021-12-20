@@ -26,9 +26,7 @@ public class FindAllNumbersDisappearedInArray {
             set.remove(num);
         }
 
-        for (Integer integer : set) {
-            list.add(integer);
-        }
+        list.addAll(set);
 
         return list;
     }

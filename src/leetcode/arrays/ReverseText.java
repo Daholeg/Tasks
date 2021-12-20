@@ -2,11 +2,11 @@ package leetcode.arrays;
 
 public class ReverseText {
     public static void main(String[] args) {
-        String S = "Hello World";
+        String str = "Hello World";
 
         // Swap words
 
-        String[] array = S.split(" ");
+        String[] array = str.split(" ");
         StringBuilder sb = new StringBuilder();
 
         for(int i = array.length - 1; i >= 0; i--){

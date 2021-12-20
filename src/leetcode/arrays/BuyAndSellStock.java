@@ -2,7 +2,7 @@ package leetcode.arrays;
 
 public class BuyAndSellStock {
     public static void main(String[] args) {
-        int[] array = new int[]{7,6,4,3,1};
+        int[] array = new int[]{7,1,5,3,6,4};
         int result = maxProfit(array);
         System.out.println(result);
 

@@ -5,8 +5,6 @@ public class RotateArray {
         int[] array = new int[]{1,2,3,4,5,6,7,5,7};
         int step = 4;
 
-        rotateV2(array, step);
-
 
 //        Input: nums = [1,2,3,4,5,6,7], k = 3
 //        Output: [5,6,7,1,2,3,4]
@@ -16,7 +14,7 @@ public class RotateArray {
 //        rotate 3 steps to the right: [5,6,7,1,2,3,4]
     }
 
-    public static void rotateV1(int[] nums, int k) {
+    public static void rotateVersion1(int[] nums, int k) {
         for (int i = 0; i < k; i++) {
             int temp = nums[nums.length - 1];
             for (int j = nums.length - 1; j > 0; j--) {
@@ -28,7 +26,7 @@ public class RotateArray {
         }
     }
 
-    public static void rotateV2(int[] nums, int k) {
+    public static void rotateVersion2(int[] nums, int k) {
         int[] result = new int[nums.length];
 
         System.arraycopy(nums, nums.length - k, result, 0, k);
