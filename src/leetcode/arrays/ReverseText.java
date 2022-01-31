@@ -2,9 +2,9 @@ package leetcode.arrays;
 
 public class ReverseText {
     public static void main(String[] args) {
-        String str = "Hello World";
+//      Swap words
 
-        // Swap words
+        String str = "Hello World";
 
         String[] array = str.split(" ");
         StringBuilder sb = new StringBuilder();
@@ -15,6 +15,5 @@ public class ReverseText {
         }
 
         System.out.println(sb.toString().trim());
-
     }
 }

@@ -8,10 +8,9 @@ import java.util.Set;
 public class FindAllNumbersDisappearedInArray {
     public static void main(String[] args) {
         int[] array = new int[]{4,3,2,7,8,2,3,1};
-
 //        Output: [5,6]
 
-        findDisappearedNumbers(array);
+        System.out.println(findDisappearedNumbers(array));
     }
 
     public static List<Integer> findDisappearedNumbers(int[] nums) {

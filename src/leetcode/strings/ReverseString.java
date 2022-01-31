@@ -1,13 +1,21 @@
 package leetcode.strings;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class ReverseString {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+//        Reverse String
+
+//        Example:
+//        Input: s = ["h","e","l","l","o"]
+//        Output: ["o","l","l","e","h"]
+
+
         String str = "hello";
         char[] array = str.toCharArray();
         reverseString(array);
-
-//        Input: s = ["h","e","l","l","o"]
-//        Output: ["o","l","l","e","h"]
     }
 
     public static void reverseString(char[] s) {

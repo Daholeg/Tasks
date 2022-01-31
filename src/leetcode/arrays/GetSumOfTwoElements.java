@@ -2,12 +2,12 @@ package leetcode.arrays;
 
 public class GetSumOfTwoElements {
     public static void main(String[] args) {
+//        Check if N is a sum of two elements of Array
+
         int [] array = new int[]{2,3,5,7,7,13};
         int n = 12;
 
         System.out.println(getSumOfTwoElements(array, n));
-
-        // Check if N is a sum of two elements of Array
     }
 
 

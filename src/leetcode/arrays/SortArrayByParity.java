@@ -2,8 +2,13 @@ package leetcode.arrays;
 
 public class SortArrayByParity {
     public static void main(String[] args) {
+//        Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers.
+
+//        Example:
+//        Input: [3,1,2,4]
+//        Output: [2,4,3,1]
+
         int[] array = new int[]{3,1,2,4};
-        // Output: [2,4,3,1]
 
         sortArrayByParity(array);
     }

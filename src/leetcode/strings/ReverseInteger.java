@@ -2,12 +2,14 @@ package leetcode.strings;
 
 public class ReverseInteger {
     public static void main(String[] args) {
-        int x = -123;
-        System.out.println(reverse(x));
+//        Reverse Integer
 
-
+//        Example:
 //        Input: x = 123
 //        Output: 321
+
+        int x = -123;
+        System.out.println(reverse(x));
     }
 
     public static int reverse(int x) {

@@ -2,6 +2,8 @@ package leetcode.arrays;
 
 public class NumbersWithEvenNumber {
     public static void main(String[] args) {
+//        Given an array nums of integers, return how many of them contain an even number of digits.
+
         int[] array = new int[]{555,901,482,1771};
         System.out.println(findEvenNumbers(array));
     }

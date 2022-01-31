@@ -5,19 +5,22 @@ import java.util.List;
 
 public class TwoSum {
     public static void main(String[] args) {
-        int[] array = new int[]{2,5,5,11};
-        int target = 10;
+//        Given an array of integers Nums and an integer Target, return indices of the two numbers that gives a sum equals Target
 
-        twoSum(array, target);
-
-
+//        Example:
 //        Input: nums = [2,7,11,15], target = 9
 //        Output: [0,1]
 //        Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+
+        int[] array = new int[]{2,5,5,11};
+        int target = 10;
+
+        getTwoIndices(array, target);
     }
 
 
-    public static int[] twoSum(int[] nums, int target) {
+    public static int[] getTwoIndices(int[] nums, int target) {
         List<Integer> list = new ArrayList<>();
 
         for (int i = 0; i < nums.length; i++) {

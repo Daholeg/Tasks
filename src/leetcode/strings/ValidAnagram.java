@@ -4,6 +4,16 @@ import java.util.Arrays;
 
 public class ValidAnagram {
     public static void main(String[] args) {
+//        Given two Strings, return true if T is an anagram of S or false otherwise.
+
+//        Example1:
+//        Input: S = "anagram", T = "nagaram"
+//        Output: true
+
+//        Example1:
+//        Input: S = "rat", T = "car"
+//        Output: false
+
         String right1 = "anagram";
         String right2 = "nagaram";
 
@@ -12,13 +22,6 @@ public class ValidAnagram {
 
         System.out.println(isAnagram(right1, right2));
         System.out.println(isAnagram(wrong1, wrong2));
-
-
-//        Input: s = "anagram", t = "nagaram"
-//        Output: true
-//
-//        Input: s = "rat", t = "car"
-//        Output: false
     }
 
     public static boolean isAnagram(String s, String t) {

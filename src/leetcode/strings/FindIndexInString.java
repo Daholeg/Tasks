@@ -7,6 +7,19 @@ public class FindIndexInString {
     public static void main(String[] args) {
 //        Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack
 
+//        Example 1:
+//        Input: haystack = "hello", needle = "ll"
+//        Output: 2
+
+//        Example 2:
+//        Input: haystack = "aaaaa", needle = "bba"
+//        Output: -1
+
+//        Example 3:
+//        Input: haystack = "mississippi", needle = "issip"
+//        Output: 4
+
+
         String haystack1 = "hello";
         String needle1 = "ll";
 
@@ -24,19 +37,6 @@ public class FindIndexInString {
         System.out.println(findFirstIndexInHaystack(haystack2, needle2));
         System.out.println(findFirstIndexInHaystack(haystack3, needle3));
         System.out.println(findFirstIndexInHaystack(haystack4, needle4));
-
-
-//        Example 1:
-//        Input: haystack = "hello", needle = "ll"
-//        Output: 2
-
-//        Example 2:
-//        Input: haystack = "aaaaa", needle = "bba"
-//        Output: -1
-
-//        Example 3:
-//        Input: haystack = "mississippi", needle = "issip"
-//        Output: 4
     }
 
     public static int findFirstIndexInHaystack(String haystack, String needle) {

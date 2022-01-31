@@ -2,6 +2,8 @@ package leetcode.arrays;
 
 public class MoveZeroes {
     public static void main(String[] args) {
+//        Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
         int [] array = new int[]{1,0,0,2,3,5,0};
         moveZeroes(array);
     }
@@ -17,12 +19,6 @@ public class MoveZeroes {
                     nums[j] = temp;
                 }
             }
-        }
-
-
-
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
         }
     }
 }
