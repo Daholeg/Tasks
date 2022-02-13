@@ -1,9 +1,7 @@
-package tests.leetcodetests.araystests;
+package tests.leetcodetests.arraystests;
 
 import leetcode.arrays.MoveZeroes;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 

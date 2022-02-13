@@ -1,4 +1,4 @@
-package tests.leetcodetests.araystests;
+package tests.leetcodetests.arraystests;
 
 import leetcode.arrays.TwoSum;
 import org.junit.jupiter.api.Test;

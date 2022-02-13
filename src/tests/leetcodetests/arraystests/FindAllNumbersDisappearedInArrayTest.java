@@ -1,10 +1,9 @@
-package tests.leetcodetests.araystests;
+package tests.leetcodetests.arraystests;
 
 import leetcode.arrays.FindAllNumbersDisappearedInArray;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
