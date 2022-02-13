@@ -23,7 +23,6 @@ public class MaxOfConsecutiveOnes {
             }else if(nums[i] != 1){
                 count = 0;
             }
-
         }
 
         return max;

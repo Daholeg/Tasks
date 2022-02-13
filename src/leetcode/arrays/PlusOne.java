@@ -54,10 +54,6 @@ public class PlusOne {
             result[i] = list.get(i);
         }
 
-        for (int i : result) {
-            System.out.print(i + " ");
-        }
-
         return result;
     }
 }

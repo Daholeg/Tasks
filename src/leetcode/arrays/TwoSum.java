@@ -1,6 +1,7 @@
 package leetcode.arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class TwoSum {
@@ -14,7 +15,7 @@ public class TwoSum {
 
 
         int[] array = new int[]{2,5,5,11};
-        int target = 10;
+        int target = 1;
 
         getTwoIndices(array, target);
     }
@@ -42,9 +43,7 @@ public class TwoSum {
             result[i] = list.get(i);
         }
 
-        for (int i : result) {
-            System.out.print(i + " ");
-        }
+        System.out.println(Arrays.toString(result));
 
         return result;
     }

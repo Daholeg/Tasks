@@ -6,6 +6,12 @@ public class ReverseText {
 
         String str = "Hello World";
 
+        String result = getReversedString(str);
+
+        System.out.println(result);
+    }
+
+    public static String getReversedString(String str) {
         String[] array = str.split(" ");
         StringBuilder sb = new StringBuilder();
 
@@ -14,6 +20,7 @@ public class ReverseText {
             sb.append(" ");
         }
 
-        System.out.println(sb.toString().trim());
+        String result = sb.toString().trim();
+        return result;
     }
 }

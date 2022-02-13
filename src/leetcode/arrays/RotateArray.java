@@ -1,5 +1,7 @@
 package leetcode.arrays;
 
+import java.util.Arrays;
+
 public class RotateArray {
     public static void main(String[] args) {
 //        Given an array, rotate the array to the right by k steps, where k is non-negative.
@@ -14,12 +16,20 @@ public class RotateArray {
 
 
         int[] array = new int[]{1,2,3,4,5,6,7,5,7};
-        int step = 4;
+        int step = 1;
+
+        rotate(array, step);
+
+        System.out.println(Arrays.toString(array));
     }
 
 
     public static void rotate(int[] nums, int k) {
         int[] result = new int[nums.length];
+
+        if(k <= 0){
+            return;
+        }
 
         System.arraycopy(nums, nums.length - k, result, 0, k);
         System.arraycopy(nums, 0, result, k, nums.length - k);
