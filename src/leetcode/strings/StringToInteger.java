@@ -20,17 +20,19 @@ public class StringToInteger {
 
     public static int findInteger(String s) {
         String temp = "";
-        int result;
-        Pattern pattern = Pattern.compile("-?\\d+");
-        Matcher matcher = pattern.matcher(s);
+        int result = 0;
+        try {
+            Pattern pattern = Pattern.compile("-?\\d+");
+            Matcher matcher = pattern.matcher(s);
 
-        while (matcher.find()){
-            temp = matcher.group();
+            while (matcher.find()) {
+                temp = matcher.group();
+            }
+
+            result = Integer.parseInt(temp);
+        } catch (NumberFormatException e) {
+            System.out.println(e.getMessage());
         }
-
-        result = Integer.parseInt(temp);
-
-        System.out.println(result);
 
         return result;
     }

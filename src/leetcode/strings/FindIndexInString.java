@@ -32,7 +32,6 @@ public class FindIndexInString {
         String haystack4 = "mississippi";
         String needle4 = "issip";
 
-
         System.out.println(findFirstIndexInHaystack(haystack1, needle1));
         System.out.println(findFirstIndexInHaystack(haystack2, needle2));
         System.out.println(findFirstIndexInHaystack(haystack3, needle3));

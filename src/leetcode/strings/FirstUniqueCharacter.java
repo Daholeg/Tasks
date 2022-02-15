@@ -17,13 +17,16 @@ public class FirstUniqueCharacter {
     }
 
     public static int firstUniqueCharIndex(String s) {
-        for(int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if(s.indexOf(c) == s.lastIndexOf(c)) {
-                return i;
+        try {
+            for(int i = 0; i < s.length(); i++) {
+                char c = s.charAt(i);
+                if(s.indexOf(c) == s.lastIndexOf(c)) {
+                    return i;
+                }
             }
+        } catch (NullPointerException e) {
+            return -1;
         }
-
         return -1;
     }
 }
