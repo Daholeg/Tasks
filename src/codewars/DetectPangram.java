@@ -1,0 +1,29 @@
+package codewars;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class DetectPangram {
+//        A pangram is a sentence that contains every single letter of the alphabet at least once.
+//        For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
+//        Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
+
+    public static void main(String[] args) {
+        String pangramTrue = "The quick brown fox jumps over the lazy dog.";
+        String pangramFalse = "You shall not pass!";
+
+        System.out.println(check(pangramTrue));
+        System.out.println(check(pangramFalse));
+    }
+
+    public static boolean check(String sentence){
+        char[] charArray = sentence.toCharArray();
+        Set<Character> set = new TreeSet<>();
+
+        for (char c : charArray) {
+            set.add(c);
+        }
+
+        return set.size() >= 26;
+    }
+}
